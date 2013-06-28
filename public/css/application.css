@@ -1,0 +1,112 @@
+
+/*
+table {
+  font-size: x-small;
+}
+*/
+
+body  {
+  background-color: #333;
+  font-size: 8pt;
+  /* font-family: Arial Black, Gadget, sans-serif; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  font-size: 8pt;
+  color: #134;
+}
+
+.table {
+  color: #134;
+  text-align: justify;
+  border-right: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
+  border-collapse:collapse
+}
+
+.table td { 
+  border-left: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 3px;
+}
+
+.table th {
+  border-left: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.selected {
+  /*use for row when broken url is selected WIP*/
+  background-color: rgba(50, 50, 50, 0.8);
+  color: #ccc;
+}
+
+.selected a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.info_panel {
+  float:left;
+  margin-right: 10px;
+  margin-left: 10px;
+  /*
+  position:relative;
+  margin-right: 100px;
+  margin-left: 100px;
+  */
+  background-color: rgba(200, 200, 200, 1);
+  margin-top: 3px;
+  border-radius: 0.6em 0.6em 0.6em 0.6em;
+  padding:10px;
+  color: #111;
+/* getting fancy */
+  -moz-box-shadow: 3px 3px 3px #222;
+  -webkit-box-shadow: 3px 3px 3px #222;
+  box-shadow: 3px 3px 3px #222;
+}
+
+.broken {
+  background-color: rgba(250, 100, 100, 0.8);
+}
+
+.tool {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.darker {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  background-color: rgba(1,1,1, 0.8);
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  padding: 5px;
+}
+
+.tools {
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  background-color: rgba(100, 100, 100, 0.8);
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  padding: 5px;
+}
+
+.click {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.spinner {
+  border-radius: inherit;
+  padding: inherit;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(150, 150, 150, 0.5);
+  font-size: 20pt;
+  -moz-box-shadow: 1px 1px 1px #222;
+  -webkit-box-shadow: 1px 1px 1px #222;
+}

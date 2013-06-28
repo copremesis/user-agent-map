@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  _400_error: 1
+  _403_error: 1
+  _404_not_found: 1
+  _404_like_content: 1
+  _500_error: 1
+  _502_error: 1
+  _503_error: 1
+  _network_unreachable: 1
+  _no_response: 1
+  _redirect_error: 1
+  _redirecting_to_error_page: 1
+  _truncated_response: 1
+  _url_restricted_by_robots_txt: 1
+  date: 2012-02-01 10:46:38
+  file: MyString
+
+two:
+  _400_error: 1
+  _403_error: 1
+  _404_not_found: 1
+  _404_like_content: 1
+  _500_error: 1
+  _502_error: 1
+  _503_error: 1
+  _network_unreachable: 1
+  _no_response: 1
+  _redirect_error: 1
+  _redirecting_to_error_page: 1
+  _truncated_response: 1
+  _url_restricted_by_robots_txt: 1
+  date: 2012-02-01 10:46:38
+  file: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  linked_from: MyString
+  discovery_date: 2012-01-24
+
+two:
+  url: MyString
+  linked_from: MyString
+  discovery_date: 2012-01-24

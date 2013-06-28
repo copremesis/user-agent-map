@@ -1,0 +1,111 @@
+
+<div class=info_panel>
+  <img src='/assets/gb_logo.png'/>
+</div>
+
+<!--DW radio link when outside of my house -->
+<!--DW radio link when inside of my house -->
+<!--
+<iframe seamless frameborder=0 scrolling=no width=340 src='http://192.168.1.104:3000/permalink?key=765b2af764bb06fb5d1c81dfbb9878f0'> </iframe>
+
+<iframe seamless frameborder=0 scrolling=no width=340 src='http://dragonwrench:m0r3b33r@dragonwrench.com/permalink?key=765b2af764bb06fb5d1c81dfbb9878f0'> </iframe>
+
+-->
+
+<%# render :file => (Rails.root.to_s + '/public/trey.html')  unless false %>
+
+
+<div class=info_panel>
+  <b>Summary</b>
+  <div id=ghost_summary>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+<div class=info_panel>
+  <b>Template distribution</b>
+  <div id=template_hit_distribution>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+<div class=info_panel>
+  <div style='display:none' id=loading class=spinner>
+    loading<blink>&hellip;</blink>
+  </div>
+  <b>Click Results</b>
+  <div id=clicks>
+    no clicks have happend<blink>&hellip;</blink>
+  </div>
+</div>
+
+<div class=info_panel>
+  <b>Map</b>
+  <div class=map>
+  </div>
+</div>
+
+
+<div class=info_panel>
+  <b>Hits</b>
+  <div id=hits>
+    <b>awaiting clicks<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+
+<div class=tools>
+  <div class='info_panel tool'>
+    <b class=click event='page -'>prev</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b class=click event='page +'>next</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b class=click event='redo'>redo</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b>page: </b> <span id=page_number></span>
+  </div>
+</div>
+
+
+<!--
+<iframe name=preview seamless frameborder=0 scrolling=no width=340 src='http://dragonwrench.local:4000/assets/gb_logo.png'> </iframe>
+-->
+
+<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
+
+<script>
+  
+$(document).ready(function() {
+  //new Poller(['ghost_summary', 'template_hit_distribution', 'per_day']);
+  new Poller(['ghost_summary', 'template_hit_distribution']);
+
+  var inspect = function(obj) {
+    for (i in obj) {
+      console.log(i, obj[i]);
+    }
+    return obj;
+  }
+
+/*
+  $('iframe').each(function(i, obj) {
+    $.get('/main/test_url', ['url=',obj.src].join(''), function(status) {
+      if(status == 'offline') {
+        //$('iframe').css({ display: 'none'});
+        //obj.style.visibility = 'hidden';
+        obj.style.display = 'none';
+        //console.log('Cannot connect to: '+obj.src+'\nhidding iframe: '+ obj.outerHTML );
+      }
+    });
+  });
+*/
+  //new Bing($('.map')[0], {width: 428, height: 249});
+
+});
+</script>

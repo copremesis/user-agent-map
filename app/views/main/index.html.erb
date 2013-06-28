@@ -1,0 +1,70 @@
+
+<div class=info_panel>
+  <img src='/assets/gwt_logo.png'/>
+</div>
+
+<div class=info_panel>
+  <b>Google Aggregates</b>
+  <div id=google_stats>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+<div class=info_panel>
+  <b>Google Stats</b>
+  <div id=google>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+<!--
+<div class=info_panel>
+  <b>Bing Stats</b>
+  <div id=bing>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+</div>
+-->
+
+<div class=info_panel>
+  <div style='display:none' id=loading class=spinner>
+    loading<blink>&hellip;</blink>
+  </div>
+  <b>Click Results</b>
+  <div id=clicks>
+    no clicks have happend<blink>&hellip;</blink>
+  </div>
+</div>
+
+
+<div class=info_panel>
+  <b>Google Source Errors</b>
+  <div id=linked_from>
+    <b>awaiting clicks<blink>&hellip;</blink></b>
+  </div>
+</div>
+
+<div class=tools>
+
+  <div class='info_panel tool'>
+    <b class=click event='page -'>prev</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b class=click event='page +'>next</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b class=click event='redo'>redo</b>
+  </div>
+
+  <div class='info_panel tool'>
+    <b>page: </b> <span id=page_number></span>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    new Poller(['google', 'google_stats']);
+  });
+</script>

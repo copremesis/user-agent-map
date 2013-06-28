@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dupe_type: MyString
+  dupe_url: MyString
+  overview_url: MyString
+  property_id: 1
+  listing: 1
+  property_type: MyString
+  active: 
+  alt_property_id: 1
+  status: MyString
+
+two:
+  dupe_type: MyString
+  dupe_url: MyString
+  overview_url: MyString
+  property_id: 1
+  listing: 1
+  property_type: MyString
+  active: 
+  alt_property_id: 1
+  status: MyString

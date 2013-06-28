@@ -1,0 +1,24 @@
+
+<div class=info_panel style="display:block">
+  <b>VM system clocks</b>
+  <div id=times>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+  <div id=your_time></div>
+</div>
+
+
+<div class=darker>
+  <div id=gantt>
+    <canvas id=canvas width=1100></canvas>
+  </div>
+</div>
+
+
+
+
+<script>
+$(document).ready(function() {
+  new Poller(['times', 'gantt'], {refresh_rate: 30000, callback: function(){ $('#foo').tablesorter(); }});
+});
+</script>

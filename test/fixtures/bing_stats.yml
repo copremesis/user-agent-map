@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ﻿url: MyString
+  http_code: 1
+  response_type: MyString
+
+two:
+  ﻿url: MyString
+  http_code: 1
+  response_type: MyString

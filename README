@@ -1,0 +1,40 @@
+
+Sat Jan 14 15:22:32 CST 2012
+
+
+so if I make a new model called queue which is the same as the property_compare table ...
+
+or just a list of ids whith a status
+
+
+
+jobs => foreign_key, status, date
+
+  jobs is a list of properties to be processed.
+
+worker => 
+
+  performes phase1 and phase2 on the job
+
+scraper => inserts property into the appropriate work_queue
+
+I suppose the name of the class would be called 
+
+Backlog
+
+  which manages a set of work_queues where are each a job model with specifc jobs
+
+maybe it would be wise to learn resque !!!
+
+
+Your need to produce Backlog would be an attempt to study resque by implementing your own version.
+
+Know this then you know how to get better performance /parallel and load balancing awareness
+Something that will make life much easier as we being working on auto or other aspects that
+involve integration:
+test processing(scraping):
+
+
+
+#keep this url handy as you'll need to update this often
+http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  guid: MyString
+  property_id: 1
+  ip: MyString
+  log_stamp: 2012-04-03 11:32:11
+  post_date: 2012-04-03 11:32:11
+  referrer: MyString
+  template: MyString
+  user_agent: MyString
+
+two:
+  guid: MyString
+  property_id: 1
+  ip: MyString
+  log_stamp: 2012-04-03 11:32:11
+  post_date: 2012-04-03 11:32:11
+  referrer: MyString
+  template: MyString
+  user_agent: MyString

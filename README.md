@@ -1,4 +1,10 @@
 user-agent-map
 ==============
 
-Sever uptime and vm clock skew HTML5 canvas view. User Agent Geo track/bing map example
+craigslist posts ghosting evaluator. Tracks number of hits a craigslist ad receives also uses user-agent/ip to geolocate.  Another dashboard is a server round-robin experiment that 
+
+
+![alt tag](http://imgur.com/fGllO4Z)
+
+
+![alt tag](http://imgur.com/ZKfMIbE)
