@@ -133,7 +133,7 @@ module Htop
         @threads << Thread.new {
           Timeout::timeout(300) {
             begin
-              @status[host] = rr("bash", "#{host}", :username => "left invalid on purpose", :password => "left invalid on purpose".decrypt) { |ssh|
+              @status[host] = rr("bash", "#{host}", :username => "QQH16esVTgxSH58GaYjBOg==\n".decrypt, :password => "Xo4l4J5RKD0+t4SmWTLN2Q==\n".decrypt) { |ssh|
                 ssh.send_data("export TERM=screen && htop\n")
                 ssh.send_data("q")
                 ssh.send_data("df -h\n")

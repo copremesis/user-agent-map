@@ -14,6 +14,26 @@ class MainController < ApplicationController
     @duration = 1.send(params[:duration] || 'day').ago rescue 1.day.ago
     @range = (@duration..Time.now.utc)
     json = case(params[:key])
+           when /transactions/
+            search_results = Braintree::Transaction.search do |search|
+              search.status.in(
+                Braintree::Transaction::Status::Authorized,
+                Braintree::Transaction::Status::SubmittedForSettlement
+              )
+              #search.created_at > Time.parse("2013-11-29T22:38:36Z")
+            end
+
+            search_results.map {|transaction|
+            #<id: nil, first_name: nil, last_name: nil, email: nil, company: nil, website: nil, phone: nil, fax: nil
+              x = {:first_name => transaction.customer_details.first_name,
+                   :last_name => transaction.customer_details.last_name,
+                   :email => transaction.customer_details.email,
+                   :amount => transaction.amount,
+                   :type => transaction.type,
+                   :id => transaction.id,
+                   :time => transaction.created_at
+              }
+            }[0..10].to_json
            when /bing/
              BingStats.select("count(*) as number_found, http_code").group(:response_type).to_json
            when /linked_from/

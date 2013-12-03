@@ -11,6 +11,9 @@ gem 'mysql2'
 
 gem 'geoip'
 
+gem 'therubyracer'
+
+gem 'braintree'
 
 
 # Gems used only for assets and not required

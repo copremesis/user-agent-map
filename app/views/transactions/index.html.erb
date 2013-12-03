@@ -1,0 +1,26 @@
+
+<div class=info_panel style="display:block">
+  <b>Transactions</b>
+  <div id=transactions>
+    <b>loading<blink>&hellip;</blink></b>
+  </div>
+<!--
+  <div id=your_time></div>
+-->
+</div>
+
+<!--
+<div class=darker>
+  <div id=gantt>
+    <canvas id=canvas width=1100></canvas>
+  </div>
+</div>
+-->
+
+
+
+<script>
+$(document).ready(function() {
+  new Poller(['transactions'], {refresh_rate: 5000, callback: function(){ $('#foo').tablesorter(); }});
+});
+</script>
